@@ -1,8 +1,6 @@
 #!/bin/bash
 # Checkra1n Easy Installer
-# GitHub Repository: https://github.com/Cool5tar/Checkra1n-Installer
-echo "cool5tar's checkra1n-installer starting..."
-echo "started"
+# GitHub Repository: https://github.com/Randomblock1/Checkra1n-Linux
 VERSION=1.0
 # Terminal colors
 BLACK=$(tput setaf 0)
@@ -171,7 +169,7 @@ function mainMenu() {
     "Install Automatic checkra1n")
       whiptail --yesno "Install autostart service? This requires you to put your device into DFU mode manually it to work." $((LINES/2)) $((COLUMNS*7/10)) $((LISTHEIGHT))
       if [ "$?" = "0" ]; then
-        wget -O checkra1n-linux.service https://raw.githubusercontent.com/cool5tar/checkra1n-installer/master/checkra1n-linux.service
+        wget -O checkra1n-linux.service https://raw.githubusercontent.com/Cool5tar/checkra1n-installer/master/checkra1n-linux.service
         chmod 644 checkra1n-linux.service
         mv checkra1n-linux.service /lib/systemd/system/checkra1n-linux.service
         Print_Style "Moved service to /lib/systemd/system/" $GREEN
@@ -187,7 +185,7 @@ function mainMenu() {
       "Install Automatic webra1n")
       whiptail --yesno "Install autostart service? This requires you to use a web browser on a different device to jailbreak." $((LINES/2)) $((COLUMNS*7/10)) $((LISTHEIGHT))
       if [ "$?" = "0" ]; then
-        wget -O checkra1n-linux.service https://raw.githubusercontent.com/cool5tar/checkra1n-installer/master/checkra1n-linux-webra1n.service
+        wget -O checkra1n-linux.service https://raw.githubusercontent.com/Cool5tar/checkra1n-installer/master/checkra1n-linux-webra1n.service
         chmod 644 checkra1n-linux.service
         mv checkra1n-linux.service /lib/systemd/system/checkra1n-linux.service
         Print_Style "Moved service to /lib/systemd/system/" $GREEN
@@ -204,7 +202,8 @@ function mainMenu() {
     ;;
     "Credits")
     NET_IP=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | head -1`
-    whiptail --title "Checkra1n GUI Installer" --msgbox "Checkra1n GUI Installer made by Cool5tar.\nConsider Following me on github at https://github.com/Cool5tar
+    whiptail --title "Checkra1n GUI Installer" --msgbox "Checkra1n GUI Installer made by Cool5tar.\nThis project is open source! Check out https://github.com/Randomblock1/Checkra1n-Linux! \nFollow me on Twitter @randomblock1_! \nPlease report all bugs in the GitHub issue tracker and feel free to make pull requests! \nINFO: $OS $(uname -mo) \nVERSION: $VERSION \nLocal IP: $NET_IP" $((LINES/2)) $((COLUMNS*7/10)) $((LISTHEIGHT))
+    mainMenu
     ;;
     "Update/Reinstall")
     whiptail --title "Checkra1n GUI Installer" --yesno "Update to latest version?" $((LINES/2)) $((COLUMNS*7/10))
@@ -216,7 +215,7 @@ function mainMenu() {
       Print_Style "Updating..." $GREEN
       mkdir checkra1n-linux
       cd checkra1n-linux
-      wget https://raw.githubusercontent.com/cool5tar/checkra1n-installer/master/installer.sh
+      wget https://raw.githubusercontent.com/Cool5tar/checkra1n-installer/master/installer.sh
       chmod 755 *.sh
       mv -f * ..
       cd ..
