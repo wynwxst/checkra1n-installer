@@ -1,6 +1,3 @@
-// Jus de Patate - 2020 - jusdepatate@protonmail.com (github:jusdepatate)
-// This script is part of Webra1n As a Service (github:jusdepatate/webra1n-as-a-service)
-// It was meant to run checkra1n on a user through ssh without being able to kill it unless we are root
 
 #include <stdio.h>
 #include <signal.h>

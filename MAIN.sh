@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# Jus de Patate - 2020 - jusdepatate@protonmail.com (github:jusdepatate)
-# This script is part of Webra1n As a Service (github:jusdepatate/webra1n-as-a-service)
+# Cool5tar - 2020 - cool5tar@gmail.com (github:cool5tar)
+# This script is part of Webra1n As a Service (github:cool5tar/checkra1n-installer)
 # It was meant to be the script to run to install everything
+echo "starting checkra1n-installer by cool5tar..."
+echo "started..."
 
 fatal() {
   echo "$*"

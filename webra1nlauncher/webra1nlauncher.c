@@ -1,5 +1,5 @@
-// Jus de Patate - 2020 - jusdepatate@protonmail.com (github:jusdepatate)
-// This shit is part of Webra1n As a Service (github:jusdepatate/webra1n-as-a-service)
+// Cool5tar - 2020 - cool5tar@gmail.com (github:cool5tar)
+// This shit is part of Webra1n As a Service (github:cool5tar/checkra1n-installer)
 // It was made to deal with Checkra1n requiring Ncurses and sending wrong status code
 
 #include <stdio.h>
