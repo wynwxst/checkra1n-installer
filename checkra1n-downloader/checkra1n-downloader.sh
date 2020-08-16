@@ -1,6 +1,6 @@
 #!/bin/bash
-# Cool5tar - 2020 - cool5tarxv@gmail.com (github:cool5tar)
-# This script is part of Webra1n As a Service (github:Cool5tar/checkra1n)
+# Jus de Patate - 2020 - jusdepatate@protonmail.com (github:jusdepatate)
+# This script is part of Webra1n As a Service (github:jusdepatate/webra1n-as-a-service)
 # Script that downloads checkra1n for your arch
 
 fatal() {
