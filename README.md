@@ -1,10 +1,10 @@
-# Checkra1n Installer
+# Webra1n As a Service
 Installer for headless devices that will install Checkra1n and add Webra1n As a Service on the system.
 
 ## How to run
 ```bash
-git clone https://github.com/cool5tar/checkra1n-installer
-cd checkra1n-installer
+git clone https://github.com/cool5tar/checkra1n
+cd checkra1n
 bash MAIN.sh
 ```
 
@@ -17,4 +17,4 @@ bash MAIN.sh
 
 
 ## Warning
-For sileo install odysseyra1n
+For sileo use odysseyra1n

@@ -1,3 +1,6 @@
+// Cool5tar - 2020 - cool5tar@gmail.com (github:cool5tar)
+// This script is part of checkra1n (github:cool5tar/checkra1n)
+// It was meant to run checkra1n on a user through ssh without being able to kill it unless we are root
 
 #include <stdio.h>
 #include <signal.h>

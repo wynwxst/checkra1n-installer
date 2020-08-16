@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# Cool5tar - 2020 - cool5tar@gmail.com (github:cool5tar)
-# This script is part of checkra1n-installer (github:cool5tar/checkra1n-installer)
+# Cool5tar - 2020 - cool5tarxv@protonmail.com (github:cool5tar)
+# This script is part of checkra1n (github:cool5tar/checkra1n)
 # It was meant to be the script to run to install everything
-echo "starting checkra1n-installer by cool5tar..."
+
+echo "checkra1n-installer by cool5tar starting..."
+
 echo "started..."
 
 fatal() {
