@@ -205,7 +205,7 @@ function mainMenu() {
     ;;
     "Credits")
     NET_IP=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | head -1`
-    whiptail --title "Checkra1n GUI Installer" --msgbox "Checkra1n GUI Installer made by Cool5tar.\nThis project is open source! Check out https://github.com/Randomblock1/Checkra1n-Linux! \nFollow me on Twitter @randomblock1_! \nPlease report all bugs in the GitHub issue tracker and feel free to make pull requests! \nINFO: $OS $(uname -mo) \nVERSION: $VERSION \nLocal IP: $NET_IP" $((LINES/2)) $((COLUMNS*7/10)) $((LISTHEIGHT))
+    whiptail --title "Checkra1n GUI Installer" --msgbox "Checkra1n GUI Installer made by Cool5tar.\nThis project is open source! Check out https://github.com/Cool5tar\nFollow me on Github @cool5tar! \nPlease report all bugs in the GitHub issue tracker and feel free to make pull requests! \nINFO: $OS $(uname -mo) \nVERSION: $VERSION \nLocal IP: $NET_IP" $((LINES/2)) $((COLUMNS*7/10)) $((LISTHEIGHT))
     mainMenu
     ;;
     "Update/Reinstall")
