@@ -1,6 +1,9 @@
 #!/bin/bash
-# Checkra1n Easy Installer
-# GitHub Repository: https://github.com/Randomblock1/Checkra1n-Linux
+
+echo " starting cool5tar's checkra1n-installer"
+
+echo "started..."
+
 VERSION=1.0
 # Terminal colors
 BLACK=$(tput setaf 0)
