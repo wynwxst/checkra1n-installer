@@ -1,6 +1,7 @@
 // Cool5tar - 2020 - cool5tarxv@gmail.com (github:cool5tar)
 // This shit is part of checkra1n (github:cool5tar/checkra1n)
 // It was made to deal with Checkra1n requiring Ncurses and sending wrong status code
+// 
 
 #include <stdio.h>
 #include <stdlib.h>
