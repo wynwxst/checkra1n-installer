@@ -5,7 +5,7 @@ Installer for headless devices that will install Checkra1n and add Webra1n As a 
 ```bash
 git clone https://github.com/cool5tar/checkra1n
 cd checkra1n-installer
-bash Installer.sh
+bash installer.sh
 ```
 
 
