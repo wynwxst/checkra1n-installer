@@ -1,4 +1,4 @@
-# Webra1n As a Service
+# Checkra1n
 Installer for headless devices that will install Checkra1n and add Webra1n As a Service on the system.
 
 ## How to run
