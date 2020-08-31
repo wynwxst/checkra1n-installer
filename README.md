@@ -7,8 +7,9 @@ install git first
 ```
 sudo apt-get update
 sudo apt-get install git
+git --version
 ```
-
+then run once git installed...
 ```bash
 git clone https://github.com/cool5tar/checkra1n-installer
 cd checkra1n-installer
