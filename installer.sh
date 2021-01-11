@@ -125,19 +125,19 @@ function mainMenu() {
     # TODO: dynamically fetch latest urls from checkra1n website
     if [[ "$CPUArch" == *"aarch64"* || "$CPUArch" == *"arm64"* ]]; then
       Print_Style "ARM64 detected!" $YELLOW
-      DL_LINK=https://assets.checkra.in/downloads/linux/cli/arm64/32cc7d1bd687800d1b5bc5cfc4f4ca15f393dada7570e78742eab068b1f2a3e2/checkra1n
+      DL_LINK=https://assets.checkra.in/downloads/linux/cli/arm64/11c0a214dc0fc19050a8103ed5b0ebf4874df3191e34491e177f3af3baced0e7/checkra1n
   
     elif [[ "$CPUArch" == *"armhf"* || "$CPUArch" == *"armv"* ]]; then
       Print_Style "ARM detected!" $YELLOW
-      DL_LINK=https://assets.checkra.in/downloads/linux/cli/arm/dde0ee4255403a427636bb76e09e409487f8be128af4b7d89fac78548bd5b35a/checkra1n
+      DL_LINK=https://assets.checkra.in/downloads/linux/cli/arm/f060f8e27005b553de42b04abd0af6b18eeacd005e68b126e991c6096f51b0b7/checkra1n
   
     elif [[ "$CPUArch" == *"x86_64"* ]]; then
       Print_Style "x86_64 detected!" $YELLOW
-      DL_LINK=https://assets.checkra.in/downloads/linux/cli/x86_64/607faa865e90e72834fce04468ae4f5119971b310ecf246128e3126db49e3d4f/checkra1n
+      DL_LINK=https://assets.checkra.in/downloads/linux/cli/x86_64/4bf2f7e1dd201eda7d6220350db666f507d6f70e07845b772926083a8a96cd2b/checkra1n
 
     elif [[ "$CPUArch" == *"x86"* ]]; then
       Print_Style "x86 detected!" $YELLOW
-      DL_LINK=https://assets.checkra.in/downloads/linux/cli/i486/53d45283b5616d9f0daa8a265362b65a33ce503b3088528cc2839544e166d4c6/checkra1n
+      DL_LINK=https://assets.checkra.in/downloads/linux/cli/i486/7926a90f4d0b73bdc514bd813e1443e4fc579e1674e34622b4bd1002a3322e0f/checkra1n
     else
       Print_Style "ERROR: Unknown/Unsuported architecture! Make sure your architecture is supported by checkra1n." $RED
       DL_LINK=UNKNOWN
