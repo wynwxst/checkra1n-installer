@@ -17,4 +17,4 @@ bash installer.sh
 ```
 
 ## Now what
-- If you want sileo then then go to github.com/cool5tar/odysseyra1n-installer
+- If you want sileo then then go to github.com/lordme1iodas/odysseyra1n-installer
