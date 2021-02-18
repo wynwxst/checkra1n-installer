@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " starting cool5tar's checkra1n-installer"
+echo " starting sakurai07's checkra1n-installer"
 
 echo "started..."
 
