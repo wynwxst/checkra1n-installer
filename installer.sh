@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo " starting sakurai07's checkra1n-installer"
+echo " starting Eris9's checkra1n-installer"
 
 echo "started..."
 
@@ -125,19 +125,19 @@ function mainMenu() {
     # TODO: dynamically fetch latest urls from checkra1n website
     if [[ "$CPUArch" == *"aarch64"* || "$CPUArch" == *"arm64"* ]]; then
       Print_Style "ARM64 detected!" $YELLOW
-      DL_LINK=https://assets.checkra.in/downloads/linux/cli/arm64/11c0a214dc0fc19050a8103ed5b0ebf4874df3191e34491e177f3af3baced0e7/checkra1n
+      DL_LINK=https://assets.checkra.in/downloads/linux/cli/arm64/43019a573ab1c866fe88edb1f2dd5bb38b0caf135533ee0d6e3ed720256b89d0/checkra1n
   
     elif [[ "$CPUArch" == *"armhf"* || "$CPUArch" == *"armv"* ]]; then
       Print_Style "ARM detected!" $YELLOW
-      DL_LINK=https://assets.checkra.in/downloads/linux/cli/arm/f060f8e27005b553de42b04abd0af6b18eeacd005e68b126e991c6096f51b0b7/checkra1n
+      DL_LINK=https://assets.checkra.in/downloads/linux/cli/arm/ff05dfb32834c03b88346509aec5ca9916db98de3019adf4201a2a6efe31e9f5/checkra1n
   
     elif [[ "$CPUArch" == *"x86_64"* ]]; then
       Print_Style "x86_64 detected!" $YELLOW
-      DL_LINK=https://assets.checkra.in/downloads/linux/cli/x86_64/4bf2f7e1dd201eda7d6220350db666f507d6f70e07845b772926083a8a96cd2b/checkra1n
+      DL_LINK=https://assets.checkra.in/downloads/linux/cli/x86_64/dac9968939ea6e6bfbdedeb41d7e2579c4711dc2c5083f91dced66ca397dc51d/checkra1n
 
     elif [[ "$CPUArch" == *"x86"* ]]; then
       Print_Style "x86 detected!" $YELLOW
-      DL_LINK=https://assets.checkra.in/downloads/linux/cli/i486/7926a90f4d0b73bdc514bd813e1443e4fc579e1674e34622b4bd1002a3322e0f/checkra1n
+      DL_LINK=https://assets.checkra.in/downloads/linux/cli/i486/77779d897bf06021824de50f08497a76878c6d9e35db7a9c82545506ceae217e/checkra1n
     else
       Print_Style "ERROR: Unknown/Unsuported architecture! Make sure your architecture is supported by checkra1n." $RED
       DL_LINK=UNKNOWN
@@ -172,7 +172,7 @@ function mainMenu() {
     "Install Automatic checkra1n")
       whiptail --yesno "Install autostart service? This requires you to put your device into DFU mode manually it to work." $((LINES/2)) $((COLUMNS*7/10)) $((LISTHEIGHT))
       if [ "$?" = "0" ]; then
-        wget -O checkra1n-linux.service https://raw.githubusercontent.com/Cool5tar/checkra1n-installer/master/checkra1n-linux.service
+        wget -O checkra1n-linux.service https://raw.githubusercontent.com/eris9/checkra1n-installer/master/checkra1n-linux.service
         chmod 644 checkra1n-linux.service
         mv checkra1n-linux.service /lib/systemd/system/checkra1n-linux.service
         Print_Style "Moved service to /lib/systemd/system/" $GREEN
@@ -218,7 +218,7 @@ function mainMenu() {
       Print_Style "Updating..." $GREEN
       mkdir checkra1n-linux
       cd checkra1n-linux
-      wget https://raw.githubusercontent.com/Cool5tar/checkra1n-installer/master/installer.sh
+      wget https://raw.githubusercontent.com/eris9/checkra1n-installer/master/installer.sh
       chmod 755 *.sh
       mv -f * ..
       cd ..
