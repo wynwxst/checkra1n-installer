@@ -11,10 +11,10 @@ git --version
 ```
 then run once git installed...
 ```bash
-git clone https://github.com/sakurai07/checkra1n-installer
+git clone https://github.com/eris9/checkra1n-installer
 cd checkra1n-installer
 bash installer.sh
 ```
 
 ## Now what
-- If you want sileo then then go to github.com/sakurai07/odysseyra1n-installer
+- If you want sileo then then go to github.com/eris9/odysseyra1n-installer
